@@ -1,0 +1,60 @@
+.footer {
+  // padding: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.818);
+  color: aliceblue;
+  margin-bottom: 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    @media only screen and (max-width: 1280px) {
+      width: 100%;
+    }
+  }
+}
+
+.github {
+  display: flex;
+  align-items: center;
+
+  p {
+    text-decoration: none;
+    line-height: 50px;
+    margin-right: 20px;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  &_link {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 50px;
+    transition: 0.5s;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      transition: 0.2s;
+    }
+  }
+}
+
+.rss {
+  margin-left: 19px;
+  &_logo {
+    filter: invert(95%) sepia(11%) saturate(261%)
+      hue-rotate(243deg) brightness(117%) contrast(100%);
+    width: 100px;
+    height: 50px;
+    &:hover {
+      cursor: pointer;
+      filter: invert(37%) sepia(17%) saturate(2062%)
+        hue-rotate(251deg) brightness(83%) contrast(83%);
+    }
+  }
+}

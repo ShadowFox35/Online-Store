@@ -1,0 +1,38 @@
+.goods-box {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.goods-cell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .good {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    width: 33.33%;
+    height: 320px;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid purple;
+      box-shadow: 0 0 10px purple;
+    }
+    &_img {
+      width: 140px;
+      height: 190px;
+    }
+    &.select {
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+    @media only screen and (max-width: 900px) {
+      width: 45%;
+    }
+  }
+}
