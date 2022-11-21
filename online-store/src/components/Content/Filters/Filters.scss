@@ -1,0 +1,184 @@
+.search-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_input {
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 5px;
+  border-radius: 42px;
+  border: 2px solid purple;
+  outline: none;
+  transition: 0.3s linear;
+  &::placeholder {
+    color: purple;
+    font-size: 15px;
+  }
+}
+
+.search-form {
+  text-align: justify;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+}
+.search_btn {
+  background: none;
+  border: none;
+  top: 15px;
+  right: 35px;
+  // color: #e6a97e;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.fa-xmark {
+  background: none;
+  border: none;
+  top: 15px;
+  right: 15px;
+  color: #090909;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_title {
+    margin-right: 10px;
+  }
+  .select {
+    height: 30px;
+    text-align: center;
+    border-radius: 42px;
+    border: 2px solid purple;
+    color: purple;
+    outline: none;
+    transition: 0.3s linear;
+  }
+}
+
+.filter {
+  margin-top: 20px;
+  text-align: justify;
+  width: 250px;
+  &_title {
+    color: purple;
+  }
+  &_box {
+    ul {
+      list-style: none;
+      margin-top: 10px;
+      .filter_value {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .filter_item {
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        &.select {
+          color: purple;
+          text-decoration: underline;
+        }
+      }
+    }
+    .faves_check {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Чекбокс
+label input {
+  display: none;
+}
+label span {
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(24, 23, 23);
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+[type='checkbox']:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 15px;
+  color: purple;
+}
+
+.range {
+  margin-top: 10px;
+  width: 200px;
+  &-slider {
+    .slider {
+      color: purple;
+    }
+  }
+}
+
+.reset {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  &_btn {
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    color: purple;
+    border-radius: 42px;
+    border: 2px solid purple;
+    margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+      color: aliceblue;
+      background-color: purple;
+    }
+  }
+}
